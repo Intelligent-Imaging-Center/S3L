@@ -27,7 +27,7 @@ conda activate s3l
 We excluded subsets D4 and D5 of the SCARED dataset due to severe calibration inaccuracies and temporal misalignment. The remaining subsets were split as follows: D1–D3 and D6–D7 were used for training, yielding 19 videos with a total of 17,206 frames. D8 and D9 were reserved for testing, providing 8 videos with 5,907 frames.
 ### Basic Dependencies:
 Please refer to [this](https://github.com/EikoLoki/MICCAI_challenge_preprocess) to prepare your SCARED data.
-
+```bash
 The folder structure is as follows:
 scard/
 ├── dataset_1/
@@ -47,7 +47,7 @@ scard/
     ├── keyframe_1/
     ├── keyframe_2/
     └── keyframe_3/
-
+```
 ### Quick Test:
 preparing trained model：We will release the pre-trained model soon.
 start testing single Image
