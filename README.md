@@ -48,7 +48,7 @@ scard/
     ├── keyframe_2/
     └── keyframe_3/
 ```
-### Quick Test:
+## ✨ Quick Test:
 preparing trained model：We will release the pre-trained model soon.
 start testing single Image
 ```bash
@@ -58,7 +58,7 @@ start testing vedio
 ```bash
 python eval_vedio.py --load_weights path/to/your/weights/folder --vedio_path path/to/your/test/vedio
 ```
-### Train:
+## 🖋 Train:
 ```bash
 python train.py --data_path path/to/your/data --output_name mytrain --config configs/scared/d1/k1.yaml
 ```
