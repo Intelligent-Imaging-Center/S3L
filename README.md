@@ -12,6 +12,26 @@ We have released the segmentation configurations and loading scripts for the SCA
 - ⬛ Upload training code  
 
 ## 🛠 Installation
+1. First you have to make sure that you clone the repo with the `--recursive` flag.
+```bash
+git clone --recursive https://github.com/Intelligent-Imaging-Center/S3L.git
+cd S3L
+```
+2. Creating a new conda environment.
+```bash
+conda create --name s3l python=3.9
+conda activate s3l
+```
+3. Install CUDA 11.8 and torch-related pacakges
+```bash
+pip install numpy==1.25.0 # do not use numpy >= v2.0.0
+conda install --channel "nvidia/label/cuda-11.8.0" cuda-toolkit
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
+```
+4. Now install the other requirements
+```bash
+conda env update -f environment.yml --prune
+```
 ### Basic Dependencies:
 - CUDA Version >= 11.8
 - Python >= 3.8
